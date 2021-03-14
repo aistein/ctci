@@ -1,4 +1,4 @@
-package chapter_1_arrays_and_strings
+package ch1
 
 import (
 	"github.com/stretchr/testify/require"
@@ -21,6 +21,7 @@ func TestIsUnique(t *testing.T) {
 	}
 	implementations := []IsUnique{
 		isuniqueBruteforce,
+		isuniqueHashmap,
 	}
 	for _, implementation := range implementations {
 		for _, tc := range tests {

@@ -1,4 +1,4 @@
-package chapter_1_arrays_and_strings
+package ch1
 
 type MutableString []rune
 type IsUnique func(s *MutableString) bool
@@ -10,6 +10,17 @@ func isuniqueBruteforce(s *MutableString) bool {
 				return false
 			}
 		}
+	}
+	return true
+}
+
+func isuniqueHashmap(s *MutableString) bool {
+	seen := make(map[rune]bool)
+	for _, runeVal := range *s {
+		if _, exists := seen[runeVal]; exists {
+			return false
+		}
+		seen[runeVal] = true
 	}
 	return true
 }

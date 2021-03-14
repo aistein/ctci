@@ -1,11 +1,11 @@
 package main
 
 import (
-	ch1 "github.com/aistein/ctci/chapter_1_arrays_and_strings"
+	"github.com/aistein/ctci/ch1"
 )
 
 type ChapterName func()
-const implementedChapters = []ChapterName{
+var implementedChapters = []ChapterName{
 	ch1.ChapterName,
 }
 
