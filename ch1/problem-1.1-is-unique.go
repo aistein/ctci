@@ -1,4 +1,4 @@
-package chapter_1_arrays_and_strings
+package ch1
 
 type MutableString []rune
 type IsUnique func(s *MutableString) bool
