@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b90916-2905-4233-b712-88ce1d3e16dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch1/problem-1.1-is-unique.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/problem-1.1-is-unique.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch1/problem-1.1-is-unique_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/problem-1.1-is-unique_test.go" afterDir="false" />
     </list>
@@ -24,6 +24,14 @@
   <component name="GOROOT" url="file:///usr/local/opt/go/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GoLibraries">
     <option name="urls">
@@ -62,61 +70,68 @@
       <recent name="$PROJECT_DIR$/chapter-1-arrays-and-strings" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestIsUnique in problem-1.1-is-unique_test.go (2)">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="ctci" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIsUnique in problem-1.1-is-unique_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="ctci" />
-      <working_directory value="$PROJECT_DIR$/chapter_1_arrays_and_strings" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/chapter_1_arrays_and_strings/problem-1.1-is-unique_test.go" />
-      <pattern value="^\QTestIsUnique\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestIsUnique in problem-1.1-is-unique_test.go (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestPivotMutableString in github.com/aistein/ctci/ch1">
+    <configuration name="TestIsUnique in github.com/aistein/ctci/ch1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="ctci" />
       <working_directory value="$PROJECT_DIR$/ch1" />
       <framework value="gotest" />
-      <kind value="FILE" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aistein/ctci/ch1" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/ch1/problem-1.1-is-unique_test.go" />
+      <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestIsUnique\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestIsUnique in problem-1.1-is-unique_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPivotMutableString in github.com/aistein/ctci/ch1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="ctci" />
-      <working_directory value="$PROJECT_DIR$/chapter-1-arrays-and-strings" />
+      <working_directory value="$PROJECT_DIR$/ch1" />
       <framework value="gotest" />
-      <kind value="FILE" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aistein/ctci/ch1" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/chapter-1-arrays-and-strings/problem-1.1-is-unique_test.go" />
-      <pattern value="^\QTestIsUnique\E$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestPivotMutableString\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="problem-1.1-is-unique_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestQuicksortMutableString/Long_Unique in github.com/aistein/ctci/ch1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="ctci" />
-      <working_directory value="$PROJECT_DIR$/chapter-1-arrays-and-strings" />
+      <working_directory value="$PROJECT_DIR$/ch1" />
       <framework value="gotest" />
-      <kind value="FILE" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aistein/ctci/ch1" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/chapter-1-arrays-and-strings/problem-1.1-is-unique_test.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestQuicksortMutableString\E$/^\QLong_Unique\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestQuicksortMutableString/Short_Not_Unique in github.com/aistein/ctci/ch1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ctci" />
+      <working_directory value="$PROJECT_DIR$/ch1" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aistein/ctci/ch1" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestQuicksortMutableString\E$/^\QShort_Not_Unique\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test github.com/aistein/ctci/ch1" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ctci" />
+      <working_directory value="$PROJECT_DIR$/ch1" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/aistein/ctci/ch1" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestIsUnique in problem-1.1-is-unique_test.go (2)" />
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.TestIsUnique in problem-1.1-is-unique_test.go (1)" />
-        <item itemvalue="Go Test.TestIsUnique in problem-1.1-is-unique_test.go" />
-        <item itemvalue="Go Test.problem-1.1-is-unique_test.go" />
+        <item itemvalue="Go Test.TestPivotMutableString in github.com/aistein/ctci/ch1" />
+        <item itemvalue="Go Test.go test github.com/aistein/ctci/ch1" />
+        <item itemvalue="Go Test.TestIsUnique in github.com/aistein/ctci/ch1" />
+        <item itemvalue="Go Test.TestQuicksortMutableString/Long_Unique in github.com/aistein/ctci/ch1" />
+        <item itemvalue="Go Test.TestQuicksortMutableString/Short_Not_Unique in github.com/aistein/ctci/ch1" />
       </list>
     </recent_temporary>
   </component>
