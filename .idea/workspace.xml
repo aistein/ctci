@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9168b528-4246-4d92-9780-7b96f9d06152" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/chapter-1-arrays-and-strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/chapter-1-arrays-and-strings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/chapter-1-arrays-and-strings_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/chapter-1-arrays-and-strings_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/problem-1.1-is-unique.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/problem-1.1-is-unique.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/problem-1.1-is-unique_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/problem-1.1-is-unique_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/problem-1.2-check-permutation.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/problem-1.2-check-permutation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch1/problem-1.2-check-permutation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch1/problem-1.2-check-permutation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="ctci" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCheckPermutation in problem-1.2-check-permutation_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ctci" />
+      <working_directory value="$PROJECT_DIR$/ch1" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/ch1/problem-1.2-check-permutation_test.go" />
+      <pattern value="^\QTestCheckPermutation\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="ctci" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestCheckPermutation in problem-1.2-check-permutation_test.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

@@ -8,8 +8,8 @@ import (
 
 func TestPivotMutableString(t *testing.T) {
 	tests := []struct {
-		name string
-		input string
+		name     string
+		input    string
 		expected int
 	}{
 		{name: "Singleton", input: "a", expected: 0},
@@ -33,8 +33,8 @@ func TestPivotMutableString(t *testing.T) {
 
 func TestQuicksortMutableString(t *testing.T) {
 	tests := []struct {
-		name string
-		input string
+		name     string
+		input    string
 		expected string
 	}{
 		{name: "Singleton", input: "a", expected: "a"},

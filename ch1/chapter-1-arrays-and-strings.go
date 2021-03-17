@@ -13,6 +13,7 @@ import (
 // encoding, even mixing multiple encodings."
 type MutableString []rune
 
+// ChapterName prints the name of the CTCI chapter corresponding to this package
 func ChapterName() {
 	logrus.Println("Arrays and Strings")
 }
@@ -20,7 +21,7 @@ func ChapterName() {
 func quicksortMutableString(l, h int, s *MutableString) {
 	if l < h {
 		j := pivotMutableString(l, h, s, func(l, h int) int {
-			return l +rand.Intn(h - l)
+			return l + rand.Intn(h-l)
 		})
 		quicksortMutableString(l, j, s)
 		quicksortMutableString(j+1, h, s)
@@ -35,15 +36,15 @@ type pivotIndexFunction func(l, h int) int
 // the pivot.  If s contains only unique values, the index where the pivot lands after reorganization is returned.  If s
 // contains duplicate pivot values, the index where the rightmost duplicate of the pivot lands is returned.
 func pivotMutableString(l, h int, s *MutableString, getIndex pivotIndexFunction) int {
-	if h - l == 1 {
+	if h-l == 1 {
 		return l
 	}
 
-	if h - l == 2 {
+	if h-l == 2 {
 		if (*s)[l] > (*s)[l+1] {
 			(*s)[l], (*s)[l+1] = (*s)[l+1], (*s)[l]
 		}
-		return l+1
+		return l + 1
 	}
 
 	pivotIdx := getIndex(l, h)
@@ -60,7 +61,7 @@ func pivotMutableString(l, h int, s *MutableString, getIndex pivotIndexFunction)
 			current++
 			continue
 		}
-		if  (*s)[current] > pivot {
+		if (*s)[current] > pivot {
 			(*s)[current], (*s)[gt] = (*s)[gt], (*s)[current]
 			gt--
 			continue

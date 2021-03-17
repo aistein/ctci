@@ -1,14 +1,15 @@
 package ch1
 
 import (
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	"github.com/stretchr/testify/require"
 )
 
 func TestCheckPermutation(t *testing.T) {
-	tests := []struct{
+	tests := []struct {
 		name, s1, s2 string
-		expected bool
+		expected     bool
 	}{
 		{name: "Empty Strings", s1: "", s2: "", expected: true},
 		{name: "Singletons Match", s1: "a", s2: "a", expected: true},
@@ -21,7 +22,7 @@ func TestCheckPermutation(t *testing.T) {
 	}
 	implementations := []struct {
 		name string
-		fn CheckPermutation
+		fn   checkPermutation
 	}{
 		{name: "Brute Force", fn: checkPermutationBruteForce},
 		{name: "Hash Map", fn: checkPermutationHashMap},
@@ -29,7 +30,7 @@ func TestCheckPermutation(t *testing.T) {
 	}
 	for _, implementation := range implementations {
 		for _, tc := range tests {
-			t.Run(implementation.name + "/" + tc.name, func(t *testing.T) {
+			t.Run(implementation.name+"/"+tc.name, func(t *testing.T) {
 				s1, s2 := MutableString(tc.s1), MutableString(tc.s2)
 				require.Equal(t, tc.expected, implementation.fn(&s1, &s2))
 			})

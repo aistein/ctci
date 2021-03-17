@@ -1,10 +1,10 @@
 package ch1
 
-type IsUnique func(s *MutableString) bool
+type isUnique func(s *MutableString) bool
 
 func isuniqueBruteforce(s *MutableString) bool {
 	for i := 0; i < len(*s); i++ {
-		for j := i+1; j < len(*s); j++ {
+		for j := i + 1; j < len(*s); j++ {
 			if (*s)[i] == (*s)[j] {
 				return false
 			}
@@ -40,4 +40,3 @@ func isuniqueQuicksort(s *MutableString) bool {
 	}
 	return true
 }
-

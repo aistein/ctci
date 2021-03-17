@@ -1,6 +1,6 @@
 package ch1
 
-type CheckPermutation func(s1, s2 *MutableString) bool
+type checkPermutation func(s1, s2 *MutableString) bool
 
 func checkPermutationBruteForce(s1, s2 *MutableString) bool {
 	if len(*s1) != len(*s2) {
@@ -8,7 +8,7 @@ func checkPermutationBruteForce(s1, s2 *MutableString) bool {
 	}
 	for i := 0; i < len(*s1); i++ {
 		cnt := 1
-		for j := i+1; j < len(*s1); j++ {
+		for j := i + 1; j < len(*s1); j++ {
 			if (*s1)[j] == (*s1)[i] {
 				cnt++
 			}
@@ -35,6 +35,9 @@ func checkPermutationHashMap(s1, s2 *MutableString) bool {
 	}
 	for _, r := range *s2 {
 		counts[r]--
+		if counts[r] < 0 {
+			return false
+		}
 		if counts[r] == 0 {
 			delete(counts, r)
 		}

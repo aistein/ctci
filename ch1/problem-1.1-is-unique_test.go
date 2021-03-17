@@ -1,14 +1,15 @@
 package ch1
 
 import (
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	"github.com/stretchr/testify/require"
 )
 
 func TestIsUnique(t *testing.T) {
 	tests := []struct {
-		name string
-		input string
+		name     string
+		input    string
 		expected bool
 	}{
 		{name: "Empty", input: "", expected: true},
@@ -21,7 +22,7 @@ func TestIsUnique(t *testing.T) {
 	}
 	implementations := []struct {
 		name string
-		fn IsUnique
+		fn   isUnique
 	}{
 		{name: "Brute Force", fn: isuniqueBruteforce},
 		{name: "Hash Map", fn: isuniqueHashmap},
@@ -29,7 +30,7 @@ func TestIsUnique(t *testing.T) {
 	}
 	for _, implementation := range implementations {
 		for _, tc := range tests {
-			t.Run(implementation.name + "/" + tc.name, func(t *testing.T){
+			t.Run(implementation.name+"/"+tc.name, func(t *testing.T) {
 				str := MutableString(tc.input)
 				require.Equal(t, tc.expected, implementation.fn(&str))
 			})
