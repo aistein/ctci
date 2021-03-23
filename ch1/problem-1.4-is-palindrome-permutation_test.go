@@ -28,6 +28,7 @@ func TestIsPalindromePermutation(t *testing.T) {
 	}{
 		{name: "Brute Force", fn: isPalindromePermutationBruteForce, skip: true},
 		{name: "Hash Map", fn: isPalindromePermutationHashMap},
+		{name: "Bit Vector", fn: isPalindromeBitVector},
 	}
 	for _, implementation := range implementations {
 		for _, tc := range tests {

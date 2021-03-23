@@ -42,6 +42,24 @@ func isPalindromePermutationHashMap(s string) bool {
 	return len(unpaired) <= 1
 }
 
+const unicodeLowerCaseA int32 = 97
+
+func isPalindromeBitVector(s string) bool {
+	var vector int
+
+	// Unicode 'a' is mapped to bit position 0, and 'z' to position 25.  XOR is used to set the bit if previously unset,
+	// or clear it if previously set.
+	for _, r := range s {
+		if unicode.IsLetter(r) {
+			pos := unicode.ToLower(r) - unicodeLowerCaseA
+			vector ^= 1 << pos
+		}
+	}
+
+	// Determine if the bit vector has at most a single set bit by ANDing it with itself minus 1.
+	return vector&(vector-1) == 0
+}
+
 func generatePermutations(s string) map[string]bool {
 	permutations := make(map[string]bool)
 	runes := []rune(s)
